@@ -171,7 +171,7 @@ import './App.css';
 function Canvas() {
   const [color, setColor] = useState('#000');
   const [showColorPicker, setShowColorPicker] = useState(false);
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState(36);
   const [canvasWidth, setCanvasWidth] = useState(400);
   const [canvasHeight, setCanvasHeight] = useState(400);
 
