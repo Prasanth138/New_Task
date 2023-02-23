@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .canvas-wrapper {
@@ -12,6 +13,19 @@
 
 .color-picker-toggle {
   margin-left: 1rem;
+  background-color: #f2f2f2;
+  color: #333;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.color-picker-toggle:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 .color-picker-container {
@@ -27,18 +41,47 @@
 
 .input-group label {
   margin-right: 0.5rem;
+  font-size: 1rem;
 }
 
 .input-group input {
   margin-left: 0.5rem;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #f2f2f2;
+  color: #333;
+  transition: all 0.2s ease-in-out;
 }
 
-.button-group {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
+.input-group input:hover {
+  background-color: #e6e6e6;
 }
 
-.button-group button {
-  margin-left: 1rem;
+@media (max-width: 480px) {
+  .input-group,
+  .color-picker-toggle {
+    flex-direction: column;
+    margin: 1rem
+  }
+
+  .input-group label {
+    margin-bottom: 0.5rem;
+  }
+
+  .button-group button {
+    margin-top: 1rem;
+  }
 }
+.canvas-wrapper Text:hover {
+  cursor: pointer;
+  transform: scale(2);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
+  pointer-events: none;
+}
+
+
+
+
